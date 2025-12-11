@@ -166,48 +166,36 @@ et orpaz.fr
 
 <br><br><br><br><br><br><br><br><br>
 </header>
-   <script>
-    (function () {
-      let speed = 30;          // Vitesse en pixels/seconde
-      let direction = 1;       // 1 = bas, -1 = haut
-      let lastTime = null;
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const content = document.documentElement; 
+    let y = 0;
+    let direction = 1;
+    const speed = 0.25; // Ajustable
 
-      function canScroll() {
-        return document.documentElement.scrollHeight > window.innerHeight + 1;
-      }
+    function loop() {
+        const max = content.scrollHeight - window.innerHeight;
 
-      function reachedBottom() {
-        return window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 1;
-      }
+        y += direction * speed;
 
-      function reachedTop() {
-        return window.scrollY <= 1;
-      }
-
-      function step(timestamp) {
-        if (!lastTime) lastTime = timestamp;
-        const dt = (timestamp - lastTime) / 1000; 
-        lastTime = timestamp;
-
-        if (canScroll()) {
-          window.scrollBy(0, direction * speed * dt);
-
-          if (direction === 1 && reachedBottom()) {
-            window.scrollTo(0, document.documentElement.scrollHeight - window.innerHeight);
+        if (y >= max) {
+            y = max;
             direction = -1;
-          } 
-          else if (direction === -1 && reachedTop()) {
-            window.scrollTo(0, 0);
+        } else if (y <= 0) {
+            y = 0;
             direction = 1;
-          }
         }
 
-        requestAnimationFrame(step);
-      }
+        // Déplacement : EXTRA compatible Android 5
+        content.style.transform = "translateY(" + (-y) + "px)";
 
-      requestAnimationFrame(step);
-    })();
-  </script>
+        setTimeout(loop, 10); // Pas requestAnimationFrame → aucun blocage !
+    }
+
+    loop();
+});
+</script>
+
 
 <br><br><br><br><br><br><br><br><br>
 </header>
