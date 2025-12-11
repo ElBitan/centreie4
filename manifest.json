@@ -1,0 +1,43 @@
+{
+    "name": "écran Horaires",
+    "short_name": "écran Horaires",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "orientation": "portrait-primary",
+    "icons": [
+      {
+        "src": "https://yt3.googleusercontent.com/H1K03ixSAoLW6kfZL7bP9G8iLFJVYhDTbL4tXLyCcyPAY1xHMkGfEhuanJpgkIDhjRQp8PUHUWc=s176-c-k-c0x00ffffff-no-rj",
+        "type": "image/png", "sizes": "72x72"
+      },
+      {
+        "src": "https://yt3.googleusercontent.com/H1K03ixSAoLW6kfZL7bP9G8iLFJVYhDTbL4tXLyCcyPAY1xHMkGfEhuanJpgkIDhjRQp8PUHUWc=s176-c-k-c0x00ffffff-no-rj",
+        "type": "image/png", "sizes": "96x96"
+      },
+      {
+        "src": "https://yt3.googleusercontent.com/H1K03ixSAoLW6kfZL7bP9G8iLFJVYhDTbL4tXLyCcyPAY1xHMkGfEhuanJpgkIDhjRQp8PUHUWc=s176-c-k-c0x00ffffff-no-rj",
+        "type": "image/png","sizes": "128x128"
+      },
+      {
+        "src": "20230418_203426_0000.png",
+        "type": "image/png", "sizes": "144x144"
+      },
+      {
+        "src": "https://yt3.googleusercontent.com/H1K03ixSAoLW6kfZL7bP9G8iLFJVYhDTbL4tXLyCcyPAY1xHMkGfEhuanJpgkIDhjRQp8PUHUWc=s176-c-k-c0x00ffffff-no-rj",
+        "type": "image/png", "sizes": "152x152"
+      },
+      {
+        "src": "https://yt3.googleusercontent.com/H1K03ixSAoLW6kfZL7bP9G8iLFJVYhDTbL4tXLyCcyPAY1xHMkGfEhuanJpgkIDhjRQp8PUHUWc=s176-c-k-c0x00ffffff-no-rj",
+        "type": "image/png", "sizes": "192x192"
+      },
+      {
+        "src": "https://yt3.googleusercontent.com/H1K03ixSAoLW6kfZL7bP9G8iLFJVYhDTbL4tXLyCcyPAY1xHMkGfEhuanJpgkIDhjRQp8PUHUWc=s176-c-k-c0x00ffffff-no-rj",
+        "type": "image/png", "sizes": "384x384"
+      },
+      {
+        "src": "https://yt3.googleusercontent.com/H1K03ixSAoLW6kfZL7bP9G8iLFJVYhDTbL4tXLyCcyPAY1xHMkGfEhuanJpgkIDhjRQp8PUHUWc=s176-c-k-c0x00ffffff-no-rj",
+        "type": "image/png", "sizes": "512x512"
+      }
+    ]
+  }
